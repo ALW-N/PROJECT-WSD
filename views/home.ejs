@@ -1,0 +1,107 @@
+<link rel="stylesheet" type="text/css" href="static/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"/>
+<%- include('./partials/header') %>
+<%- include('./partials/post_nav',{user:user, pub:pub}) %>
+
+<div class="">
+    <div style="margin-top: 26px;">
+        <div id="banner-h" class="d-flex">
+            <!-- <div><img src="/static/img/banner01.png" alt=""></div> -->
+            <!-- <div><img src="/static/img/banner1.png" alt=""></div> -->
+            <!-- <div><img src="/static/img/banner1.png" alt=""></div> -->
+            <div><img src="/static/img/banner01.jpeg" alt=""></div>
+            <div><img src="/static/img/banner02.jpeg" alt=""></div>
+            <div><img src="/static/img/banner03.jpeg" alt=""></div>
+        </div>
+    </div>
+    <br>
+    <div id="about" class="container content">
+        <h3 class="heading text-blue">
+            About Us
+            <div class="separator">
+                <span class="dott"></span>
+                <span class="dott"></span>
+                <span class="dott"></span>
+            </div>
+        </h3>
+        <br>
+        <p class="para">Faitein is a privately owned boutique computer manufacturer and distributor in the United Arab Emirates that primarily specializes For the Installation and Support in high-performance Server, workstation, NAS, SAN, Firewall, Virtualization and Cloud, desktop and laptop computers, IP-Phone, CCTV, Printer, Power UPS, IT Accessories and Software.</p>
+        <p class="para">FAITEIN (<a href="https://www.faitein.com/" target="_blank" rel="noopener noreferrer"> www.faitein.com</a>) with its headquarters in Dubai is promoted by professionals with well over 40 years of standing, representing different continents, with extensive experience in the areas of technology, markets, business applications, Training and understanding entrepreneurial needs and challenges.</p>
+        <br>
+        <h6 class="text-blue font-weight-bold">We assist companies through following services: -</h6>
+        <p class="para">
+            <ul>
+<li> IT Service for managed IT services</li>
+<li> Network support</li>
+<li> IT security based in Dubai UAE</li>
+<li> Networking for managed IT services</li>
+
+</ul>
+        </p>
+    </div>
+    
+    <div class=" container-fluid home-banner">
+        
+        <h3>Want to lead? Get an internship. </h3>
+        <div>
+            <img src="/static/img/tick.svg" alt="✔">
+            Apply for free
+        </div>
+        <div>
+            <img src="/static/img/tick.svg" alt="✔">
+            100% verified
+        </div>
+        <div>
+            <img src="/static/img/tick.svg" alt="✔">
+            Performance based stipend
+        </div>
+        <br><br><br>
+        <div><a href="/internships">View internships</a></div>
+    </div>
+
+    <div class="container content">
+        <h3 class="heading text-blue">
+            What it is ?
+            <div class="separator">
+                <span class="dott"></span>
+                <span class="dott"></span>
+                <span class="dott"></span>
+            </div>
+        </h3>
+        <br>
+        <p class="para">Our internships is an approach to problem-based and project-based learning that relies upon hands-on, often collaborative, learning experiences as a method for solving authentic problems. Inspired by the spirit of Nai talim education, propounded by Gandhi ji, we undertake to impart knowledge by making the students habituate themselves with the competative environment.</p>
+        <h6 class="text-blue font-weight-bold">Perks for the candidates: </h6>
+        <ul>
+            <li>Internship Certificate</li>
+            <li>Appreciation Certificate</li>
+            <li>Performance based Stipend PPO</li>
+            <li>Practical knowledge on the core specialisation</li>
+            <li>Hands on Practical Training</li>
+            <li>Group and Individual Training to every Person</li>
+            <li>Placement Assistance</li>
+
+        </ul>
+    </div>
+    
+</div>
+
+<%- include('./user/login-modal') %>
+<script type="text/javascript" src="static/slick/slick.min.js"></script>
+<script>
+    $(document).ready(() => {
+        $('#banner-h').slick({ 
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        lazyLoad: true,
+        arrows: true
+        });
+    });
+    
+</script>
+
+<%- include('./partials/footer') %>
